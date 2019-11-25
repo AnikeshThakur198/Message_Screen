@@ -11,11 +11,11 @@
         <title>Message Screen</title>
     </head>
 
-    <body>
+    <body id='body'>
         <div class="container">
 
             <!-- Section1 : Message Header -->
-            <section class="msg-header">
+            <section id="header" class="msg-header">
                 <div class="header-img">
                     <img style="width:60px; height:60px; cursor: pointer; border-radius: 50%" src="./img/Image3.jpeg" alt="profile_pic">
                 </div>
@@ -32,8 +32,8 @@
                             <a href=""><i class="fa fa-ellipsis-v"></i></a>
                             <div class="list">
                                 <ul>
-                                    <li class="list-elem"><a class="list-link" href="">View</a></li>
-                                    <li class="mode"><a class="list-link" href="">Media</a></li>
+                                    <li class="list-elem"><a id="list-link1" class="list-link" href="">View</a></li>
+                                    <li class="mode"><a id="list-link2" class="list-link" href="">Media</a></li>
                                 </ul>
                             </div>
                     </div>
@@ -56,7 +56,7 @@
 
                     <div class="sent-msg">
                         <div class="s-msg">
-                            <p>Hello, Anikesh Thakur. I'm fine.</p>
+                            <p id="s-msg1">Hello, Anikesh Thakur. I'm fine.</p>
                             <span class="time">01:09 AM | November 25</span>
                         </div>
                         <div class="recieved-msg-img">
@@ -76,7 +76,7 @@
 
                     <div class="sent-msg">
                         <div class="s-msg">
-                            <p>You tell me, last time you cancelled the whole plan</p>
+                            <p id="s-msg2">You tell me, last time you cancelled the whole plan</p>
                             <span class="time">01:09 AM | November 25</span>
                         </div>
                         <div class="recieved-msg-img">
@@ -98,7 +98,7 @@
             </section>
 
             <!-- Section3 : Footer -->
-            <section class="msg-footer">
+            <section id="footer" class="msg-footer">
                 <div class="footer-icon">
                     <a href=""><i class="fa fa-plus-circle foot-link"></i></a>
                     <a href=""><i class="fa fa-camera foot-link"></i></a>
@@ -110,11 +110,17 @@
                         <input type="text" class="form-control" placeholder="write a message.. ">
                     </div>
                     <div class="send-logo">
-                        <a href=""><i class="fa fa-paper-plane foot-link sent-logo"></i></a>
+                        <a href=""><i id="sent" class="fa fa-paper-plane foot-link sent-logo"></i></a>
                     </div>
                 </div>
             </section>
 
+        </div>
+
+        <div class="dark-mode">
+            <p>Switch to Dark mode</p>
+            <button class="dark" onclick="dark()">Dark</button>
+            <p class='para'>Note: In order to get the old design back, you need to refresh the page.. :)</p>
         </div>
 
         <script src="script.js"></script>
